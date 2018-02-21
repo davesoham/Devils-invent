@@ -18,9 +18,9 @@
  void loop() {
  long duration, distance;
  digitalWrite(trigPin, LOW); 
- delayMicroseconds(100);  - Can be changed
+ delayMicroseconds(100);  /*Determine bug speed and change*/
  digitalWrite(trigPin, HIGH);
- delayMicroseconds(2000); -Can be changed
+ delayMicroseconds(2000); /*Determine bug speed and change*/
  digitalWrite(trigPin, LOW);
  duration = pulseIn(echoPin, HIGH);
  distance = (duration/2) / 29.1;
@@ -30,7 +30,7 @@
  else {
  currentState = 0;
  }
- delay(1000); - can be changed
+ delay(1000);  /*Determine bug speed and change*/
  if(currentState != previousState){
  if(currentState == 1){
  counter = counter + 1;
