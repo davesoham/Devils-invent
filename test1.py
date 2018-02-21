@@ -34,7 +34,7 @@ for file1 in imageList:
         change = 0
         changed=change
         results.append(changed)
-    elif(change>=32.08):
+    elif(change>=10.00):
         num=12
         while(num>0):
     
