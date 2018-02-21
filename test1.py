@@ -42,7 +42,7 @@ for file1 in imageList:
             time.sleep(0.2)
             GPIO.output(4,False)
             time.sleep(0.2)
-            num=num-1
+            num -= 1
 ##        GPIO.output(4,True)
     changed=round(change,2)
     results.append(changed)
